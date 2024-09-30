@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Thread\Lock.h" />
     <ClInclude Include="Main\CoreGlobal.h" />
     <ClInclude Include="Main\CoreMacro.h" />
     <ClInclude Include="Main\CoreTLS.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="Thread\ThreadManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Thread\Lock.cpp" />
     <ClCompile Include="Main\CoreGlobal.cpp" />
     <ClCompile Include="Main\CoreTLS.cpp" />
     <ClCompile Include="Main\CorePch.cpp" />
