@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="Utils\pch.h" />
-    <ClInclude Include="Utils\CorePch.h" />
-    <ClInclude Include="Utils\Types.h" />
+    <ClInclude Include="Main\pch.h" />
+    <ClInclude Include="Main\CorePch.h" />
+    <ClInclude Include="Main\Types.h" />
+    <ClInclude Include="Main\CoreGlobal.h" />
+    <ClInclude Include="Main\CoreTLS.h" />
+    <ClInclude Include="Main\CoreMacro.h" />
+    <ClInclude Include="Thread\ThreadManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Utils\pch.cpp" />
-    <ClCompile Include="Utils\CorePch.cpp" />
+    <ClCompile Include="Main\pch.cpp" />
+    <ClCompile Include="Main\CorePch.cpp" />
+    <ClCompile Include="Main\CoreGlobal.cpp" />
+    <ClCompile Include="Main\CoreTLS.cpp" />
+    <ClCompile Include="Thread\ThreadManager.cpp" />
   </ItemGroup>
 </Project>
