@@ -9,6 +9,7 @@
     <ClInclude Include="Main\CoreMacro.h" />
     <ClInclude Include="Thread\ThreadManager.h" />
     <ClInclude Include="Thread\Lock.h" />
+    <ClInclude Include="Thread\DeadLockProfiler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main\pch.cpp" />
@@ -17,5 +18,6 @@
     <ClCompile Include="Main\CoreTLS.cpp" />
     <ClCompile Include="Thread\ThreadManager.cpp" />
     <ClCompile Include="Thread\Lock.cpp" />
+    <ClCompile Include="Thread\DeadLockProfiler.cpp" />
   </ItemGroup>
 </Project>
