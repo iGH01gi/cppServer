@@ -59,9 +59,49 @@ void ThreadRead()
 	}
 }
 
+template<class T>
+
+void print(T& n) {
+
+	std::cout << "l-value" << std::endl;
+	n = 1;
+	cout << n << endl;
+}
+
+
+
+template<class T>
+
+void print(T&& n) {
+
+	std::cout << "r-value" << std::endl;
+
+}
+
+
+
+template<class T>
+
+void fnc(T&& n) {
+
+	print(n);
+
+}
+
 int main()
 {
-	for (int32 i = 0; i < 2; ++i)
+	/*int n = 10;
+
+	fnc(move(n));
+
+	fnc("hwan");*/
+
+	//fnc(1.123);
+	int&& a = 1;
+	print(forward<int>(a));
+
+
+	/*for (int32 i = 0; i < 2; ++i)
 	{
 		GThreadManager->Launch(ThreadWrite);
 	}
@@ -71,5 +111,5 @@ int main()
 		GThreadManager->Launch(ThreadRead);
 	}
 
-	GThreadManager->Join();
+	GThreadManager->Join();*/
 }
