@@ -18,8 +18,8 @@
 -----------------*/
 
 #ifdef _DEBUG
-#define ialloc(size)		StompAllocator::Alloc(size)
-#define irelease(ptr)		StompAllocator::Release(ptr)
+#define ialloc(size)		PoolAllocator::Alloc(size)
+#define irelease(ptr)		PoolAllocator::Release(ptr)
 #else
 #define ialloc(size)		BaseAllocator::Alloc(size)
 #define irelease(ptr)		BaseAllocator::Release(ptr)

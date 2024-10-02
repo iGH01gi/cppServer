@@ -14,6 +14,7 @@
     <ClInclude Include="Memory\Memory.h" />
     <ClInclude Include="Memory\RefCounting.h" />
     <ClInclude Include="Memory\Container.h" />
+    <ClInclude Include="Memory\MemoryPool.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main\pch.cpp" />
@@ -26,5 +27,6 @@
     <ClCompile Include="Memory\Allocator.cpp" />
     <ClCompile Include="Memory\Memory.cpp" />
     <ClCompile Include="Memory\RefCounting.cpp" />
+    <ClCompile Include="Memory\MemoryPool.cpp" />
   </ItemGroup>
 </Project>
