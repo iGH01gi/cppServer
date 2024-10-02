@@ -13,6 +13,7 @@
     <ClInclude Include="Memory\Allocator.h" />
     <ClInclude Include="Memory\Memory.h" />
     <ClInclude Include="Memory\RefCounting.h" />
+    <ClInclude Include="Memory\Container.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main\pch.cpp" />
