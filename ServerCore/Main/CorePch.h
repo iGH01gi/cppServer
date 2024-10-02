@@ -20,5 +20,6 @@
 using namespace std;
 
 #include "../Thread/Lock.h"
+#include "../Memory/Memory.h"
 
 

@@ -88,8 +88,21 @@ void fnc(T&& n) {
 
 }
 
+class MyClass
+{
+	
+};
+
 int main()
 {
+	//내 pc의 page크기를 알아보기 위한 코드를 실행
+		//SYSTEM_INFO si;
+	SYSTEM_INFO si;
+	GetSystemInfo(&si);
+
+	// 페이지 크기 출력
+	std::cout << "Page size: " << si.dwPageSize << " bytes" << std::endl;
+
 	/*int n = 10;
 
 	fnc(move(n));
@@ -97,8 +110,8 @@ int main()
 	fnc("hwan");*/
 
 	//fnc(1.123);
-	int&& a = 1;
-	print(forward<int>(a));
+	/*int&& a = 1;
+	print(forward<int>(a));*/
 
 
 	/*for (int32 i = 0; i < 2; ++i)
