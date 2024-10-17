@@ -46,3 +46,9 @@ void idelete(Type* obj)
 	obj->~Type();
 	irelease(obj);
 }
+
+template<typename Type>
+shared_ptr<Type> MakeShared()
+{
+	return shared_ptr<Type>{ inew<Type>(), idelete<Type> };
+}

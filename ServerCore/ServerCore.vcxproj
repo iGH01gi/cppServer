@@ -72,15 +72,35 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)Libraries\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)ServerCore\Main;$(SolutionDir)ServerCore\Memory;$(SolutionDir)ServerCore\Network;$(SolutionDir)ServerCore\Thread;$(SolutionDir)ServerCore\Utils;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(SolutionDir)ServerCore\*;$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <PublicModuleDirectories>
+    </PublicModuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)Libraries\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)ServerCore\Main;$(SolutionDir)ServerCore\Memory;$(SolutionDir)ServerCore\Network;$(SolutionDir)ServerCore\Thread;$(SolutionDir)ServerCore\Utils;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(SolutionDir)ServerCore\*;$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <PublicModuleDirectories>
+    </PublicModuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)Libraries\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)ServerCore\Main;$(SolutionDir)ServerCore\Memory;$(SolutionDir)ServerCore\Network;$(SolutionDir)ServerCore\Thread;$(SolutionDir)ServerCore\Utils;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(SolutionDir)ServerCore\*;$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <PublicModuleDirectories>
+    </PublicModuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)Libraries\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)ServerCore\Main;$(SolutionDir)ServerCore\Memory;$(SolutionDir)ServerCore\Network;$(SolutionDir)ServerCore\Thread;$(SolutionDir)ServerCore\Utils;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(SolutionDir)ServerCore\*;$(ExternalIncludePath)</ExternalIncludePath>
+    <PublicIncludeDirectories>$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <PublicModuleDirectories>
+    </PublicModuleDirectories>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -159,6 +179,7 @@
     <ClInclude Include="Memory\Container.h" />
     <ClInclude Include="Memory\Memory.h" />
     <ClInclude Include="Memory\Allocator.h" />
+    <ClInclude Include="Memory\ObjectPool.h" />
     <ClInclude Include="Memory\RefCounting.h" />
     <ClInclude Include="Thread\DeadLockProfiler.h" />
     <ClInclude Include="Thread\Lock.h" />
