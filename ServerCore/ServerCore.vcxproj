@@ -181,6 +181,7 @@
     <ClInclude Include="Memory\Allocator.h" />
     <ClInclude Include="Memory\ObjectPool.h" />
     <ClInclude Include="Memory\RefCounting.h" />
+    <ClInclude Include="Memory\TypeCast.h" />
     <ClInclude Include="Thread\DeadLockProfiler.h" />
     <ClInclude Include="Thread\Lock.h" />
     <ClInclude Include="Main\CoreGlobal.h" />
