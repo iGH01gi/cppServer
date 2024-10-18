@@ -17,6 +17,8 @@
     <ClInclude Include="Memory\MemoryPool.h" />
     <ClInclude Include="Memory\ObjectPool.h" />
     <ClInclude Include="Memory\TypeCast.h" />
+    <ClInclude Include="Network\SocketUtils.h" />
+    <ClInclude Include="Network\NetAddress.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main\pch.cpp" />
@@ -30,5 +32,7 @@
     <ClCompile Include="Memory\Memory.cpp" />
     <ClCompile Include="Memory\RefCounting.cpp" />
     <ClCompile Include="Memory\MemoryPool.cpp" />
+    <ClCompile Include="Network\SocketUtils.cpp" />
+    <ClCompile Include="Network\NetAddress.cpp" />
   </ItemGroup>
 </Project>

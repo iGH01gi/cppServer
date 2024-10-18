@@ -182,6 +182,8 @@
     <ClInclude Include="Memory\ObjectPool.h" />
     <ClInclude Include="Memory\RefCounting.h" />
     <ClInclude Include="Memory\TypeCast.h" />
+    <ClInclude Include="Network\NetAddress.h" />
+    <ClInclude Include="Network\SocketUtils.h" />
     <ClInclude Include="Thread\DeadLockProfiler.h" />
     <ClInclude Include="Thread\Lock.h" />
     <ClInclude Include="Main\CoreGlobal.h" />
@@ -197,6 +199,8 @@
     <ClCompile Include="Memory\Memory.cpp" />
     <ClCompile Include="Memory\Allocator.cpp" />
     <ClCompile Include="Memory\RefCounting.cpp" />
+    <ClCompile Include="Network\NetAddress.cpp" />
+    <ClCompile Include="Network\SocketUtils.cpp" />
     <ClCompile Include="Thread\DeadLockProfiler.cpp" />
     <ClCompile Include="Thread\Lock.cpp" />
     <ClCompile Include="Main\CoreGlobal.cpp" />
